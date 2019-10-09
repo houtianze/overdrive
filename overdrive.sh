@@ -138,7 +138,7 @@ download() {
   # prepare to download the parts
   baseurl=$(xmlstarlet sel -t -v '//Protocol[@method="download"]/@baseurl' "$1")
 
-  dir="$Author - $Title"
+  dir="$Title - $Author"
   >&2 printf 'Creating directory %s\n' "$dir"
   mkdir -p "$dir"
 
